@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color:rgb(0, 0, 33);
+    color: antiquewhite;
+    font-family: 'Poppins', sans-serif;
+}
+nav{
+    display: flex;
+    width: 100%;
+    margin: auto;
+   background-color: rgb(5, 4, 110);
+    align-items: center;
+    justify-content: space-around;
+    height: 80px;
+}
+nav ul {
+    display: flex;
+    justify-content: center;
+    
+}
+nav ul li{
+    list-style: none;
+    margin: 0 23px;
+
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+nav ul li a:hover{
+    
+    color: orange;
+    font-size: 1.04rem;
+}
+main hr{
+    border: 0;
+    background: orange;
+    height: 1.2px;
+    margin: 40px 84px;
+}
+
+.left{
+    font-size: 1.5rem;
+    color: antiquewhite;
+}
+.firstsection{
+    display: flex;
+    justify-content: space-around;
+    margin: 90px 0;
+    align-items: center;
+
+}
+.firstsection >div{
+    width: 30%;
+
+}
+.leftsection{
+    font-size: 2rem;
+    margin: 70px 0;
+}
+
+.rightsection img{
+    width: 80%;
+}
+.purple{
+    color: orange;
+}
+#element{
+    color: orange;
+}
+
+.secondsection{
+    max-width: 80vw;
+    margin: auto;
+    height: 80vh;
+}
+.secondsection h1{
+    font-size: 1.9rem;
+    margin-top: 0px;
+}
+.text-gray{
+    color: gray;
+}
+.secondsection .box{
+    background: orange;
+    width: 80vw;
+    height: 2px;
+    margin: 56px 0;
+    display: flex;
+    
+}
+.secondsection .vertical{
+    height: 93px;
+    width: 1px;
+    background-color: orange;
+    margin: 0 100px;
+
+}
+
