@@ -8,9 +8,11 @@
     <link rel="stylesheet" href="Task2_Portfolio_SwetaDwivedi.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="path/to/boxicons.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@700&family=Poppins:ital,wght@0,400;0,500;1,400&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.boxicons.com/boxicons/2.0.7/boxicons.css">
 
     <title>Personal Portfolio</title>
 </head>
@@ -18,48 +20,194 @@
 <body>
     <header>
         <nav>
-        <div class="left">Sweta's Portfolio</div>
-        <div class="right">
-            <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/">About</a></li>
-                <li><a href="/">Services</a></li>
-                <li><a href="/">Projects</a></li>
-                <li><a href="/">Contact Me</a></li>
-            </ul>
-        </div>
-    </nav>
+            <div class="navBar">
+                <div class="name">Sweta's Portfolio</div>
+                <ul class="mobieNav">
+
+                    <input type="checkbox" id="checkbox_toggle" />
+                    <label for="checkbox_toggle" class="clapperboard">&#127916;</label>
+                    <div class="menus">
+
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#exp">Projects</a></li>
+                        <li>
+                            <a href="#">Contact Me</a>
+                            <ul class="submenu">
+                                <li><img src="Image/facebook.png"><a href="https://www.facebook.com/sweta.dwivedi.5851">
+                                        &nbsp Facebook</a></li>
+                                <li> <img src="Image/Twitter.png">&nbsp Twitter</li>
+                                <li> <img src="Image/instagram.png"><a
+                                        href="https://www.instagram.com/swetadwivedi_/">&nbsp Instagram</a></li>
+                            </ul>
+                        </li>
+
+                    </div>
+                </ul>
+            </div>
+        </nav>
     </header>
     <main>
-        <section class="firstsection">
+        <section class="firstsection" id="home">
             <div class="leftsection">
-                Hi, I'm Sweta <span class="purple">Dwivedi</span><div>and I am a  passionate</div>
+                Hi, I'm Sweta <span class="purple">Dwivedi</span>
+                <div>and I am a passionate</div>
                 <span id="element"></span>
+                <div class="button">
+                    <a class="btn" href="SWETADWIVEDI.pdf" title="" download>Download Resume</a>
+                    <button class="btn"><a href="https://github.com/Sweta-Dwivedi">Visit Github</a></button>
+                </div>
             </div>
             <div class="rightsection">
                 <img src="Image/name.png">
             </div>
         </section>
         <hr>
-        <section class="secondsection"><span class="text-gray">What I Have Done So Far</span><h1>Work Experience</h1>
-        <div class="box"><div class="vertical"></div>
-        <div class="vertical"></div>
-        <div class="vertical"></div>
-        <div class="vertical"></div>
-    </div></section>
-    </main>
-    
-    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-    
+        <section class="about" id="about">
+            <div class="about-img">
+                <img src="Image/Designer girl-amico.png">
+            </div>
+            <div class="about-test">
+                <h2>About Me</h2>
+                <h5>I am a Dynamic Creative Designer <span>Coder and developer</span></h5>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis veritatis provident nesciunt
+                    optio at voluptatibus perspiciatis dolor et non maxime? Laudantium explicabo dolorem sed nisi, rerum
+                    illum impedit quisquam odit, doloribus minus soluta, iusto rem quas itaque sequi? Aliquam itaque
+                    laborum ea soluta asperiores vel consequuntur, obcaecati modi at ex, amet harum dicta tenetur
+                    facilis ipsum et impedit magnam numquam odit similique eius! Aliquam cumque veritatis quaerat,
+                    commodi distinctio adipisci tempore. Provident excepturi,
+                </p>
+                <button class="about-btn"><a href="#">Hire Me</a></button>
+            </div>
+        </section>
+        <hr>
+        <section class="services" id="services">
+            <div class="text-center">
+                <h2>My Services</h2>
+                <h4>We work with you, Not for you</h4>
+            </div>
+            <div class="service-item">
+                <div class="service-box">
+                    <iconify-icon icon="oi:signal"></iconify-icon>
+                    <h3>Web Design</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A ullam enim culpa amet cumque qui
+                        minima doloremque temporibus natus ab laborum, cum itaque?</p>
+                    <a href="#" class="s-btn">Read More</a>
+                </div>
+                <div class="service-box">
+                    <iconify-icon icon="simple-icons:html5"></iconify-icon>
+                    <h3>Web Developer</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A ullam enim culpa amet cumque qui
+                        minima doloremque temporibus natus ab laborum, cum itaque?</p>
+                    <a href="#" class="s-btn">Read More</a>
 
-  <!-- Setup and start animation! -->
-  <script>
-    var typed = new Typed('#element', {
-      strings: ['Web Designer', 'Graphic Designer','Web Developer'],
-      typeSpeed: 50,
-      loop: true,
-    });
-  </script>
+                </div>
+                <div class="service-box">
+                    <iconify-icon icon="bx:code-alt"></iconify-icon>
+                    <h3>Graphic Design</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A ullam enim culpa amet cumque qui
+                        minima doloremque temporibus natus ab laborum, cum itaque?</p>
+                    <a href="#" class="s-btn">Read More</a>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section class="contacts">
+            <div class="left-contacts">
+                <div class="in">
+                    <iconify-icon icon="simple-icons:dribbble"></iconify-icon>
+                    <h4>Dribble</h4>
+                </div>
+                <div class="in">
+                    <iconify-icon icon="simple-icons:behance"></iconify-icon>
+                    <h4>Behance</h4>
+
+                </div>
+                <div class="in">
+                    <iconify-icon icon="simple-icons:upwork"></iconify-icon>
+                    <h4>Upwork</h4>
+                </div>
+                <div class="right-contacts">
+                    <h2>Profiles</h2>
+                    <a href="#">Hire Me</a>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos ea magni rem, repellendus
+                        perspiciatis dolorem mollitia hic repudiandae temporibus iusto. Sapiente quisquam, non
+                        voluptatum sed omnis incidunt quo quis doloribus, unde blanditiis fuga culpa veritatis dolore
+                        eos aut inventore accusamus nisi veniam voluptatem id perferendis reprehenderit, ab deleniti
+                        cupiditate. Sint numquam alias facere, nisi corrupti aspernatur.</p>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section class="secondsection" id="exp"><span class="text-gray">What I Have Done So Far</span>
+            <h1>Work Experience</h1>
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="Image/CSS.png" alt="">
+                    <div class="vertical-title">
+                        Web development Intern (June 2023)
+                    </div>
+                    <div class="vertical-desc">
+                        I am a web development intern at Geogo techsolutions. I learnt front-end development using
+                        tailwind CSS and the different tools of Django Framework.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="Image/html.png" alt="">
+                    <div class="vertical-title">
+                        Web development Intern (Aug 2023)
+                    </div>
+                    <div class="vertical-desc">
+                        I am a web development and designing intern at OASIS Infobyte where my task is to make a landing
+                        page, a portfolio and a Temperature Converter website.
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <hr>
+    </main>
+
+
+    <section class="end">
+        <h3>Copyright &#169; www.swetadwivedi.com || All Rights Reserved</h3>
+        <p>For More Info Contact:</p>
+        <div class="end-icons">
+            <a href="#"><iconify-icon icon="fa-brands:instagram"></iconify-icon></a>
+            <a href="#"><iconify-icon icon="fa-brands:facebook"></iconify-icon></a>
+            <a href="#"><iconify-icon icon="fa-brands:twitter"></iconify-icon></a>
+        </div>
+    </section>
+
+    <a href="#" class="scroll-btn"><iconify-icon icon="fa-solid:chevron-up"></iconify-icon></a>
+    <!-- <footer>
+        <div class="footer">
+            <div class="footerfirst">Sweta's Developer Portfolio</div>
+            <div class="footersecond"><ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+                
+            </ul></div>
+            
+        </div>
+        <div class="rights">Copyright &#169; www.swetadwivedi.com || All Rights Reserved</div>
+    </footer> -->
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Designer', 'Graphic Designer', 'Web Developer'],
+            typeSpeed: 50,
+            loop: true,
+        });
+    </script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    
 
 </body>
 

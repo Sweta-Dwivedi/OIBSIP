@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEMPERTATURE CONVERTER WEBSITE</title>
+    <link rel="stylesheet" href="converter.css" />
+</head>
+<body>
+    <header>
+        <div class="navbar">TEMPERTATURE CONVERTER</div>
+    </header>
+    <form id="tempCalc" onsubmit="calculateTemp(); return false">
+        <label for="temp" class="heading">Enter The Tempertaure</label>
+        <div class="input"><br>
+        <input type="number" class="number" name="temp" id="temp">
+
+        <select name="temp_diff" id="temp_diff" class="select">
+            <option value="cel">°Celsius</option>
+            <option value="far">°Farenheit</option>
+            <option value="kel">Kelvin</option>
+        </select>
+    </div><br/>
+    <div class="submit"><input type="submit" name="temp" class="innersubmit" ></div>
+    <div class="op"><div class="op1"><span id="resulta"></span></div>
+    <div class="op2"><span id="resultb"></span></div></div>
+</form>
+
+    
+    <footer>
+        <div class="footer">&#169; Sweta Dwivedi || All Rights Reserved</div>
+    </footer>
+
+
+    <script src="converter.js"></script>
+</body>
+</html>
